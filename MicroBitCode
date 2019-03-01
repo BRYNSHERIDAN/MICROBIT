@@ -18,9 +18,36 @@ input.onButtonPressed(Button.B, function () {
         `)
 })
 input.onButtonPressed(Button.AB, function () {
-    basic.showIcon(IconNames.Yes)
+    basic.showLeds(`
+        . . # . #
+        . . # . #
+        # . . . .
+        . # # # #
+        . . . . .
+        `)
+    basic.showLeds(`
+        # . # . .
+        # . # . .
+        . . . . #
+        # # # # .
+        . . . . .
+        `)
+    basic.showLeds(`
+        . . # . #
+        . . # . #
+        # . . . .
+        . # # # #
+        . . . . .
+        `)
+    basic.showLeds(`
+        # . # . .
+        # . # . .
+        . . . . #
+        # # # # .
+        . . . . .
+        `)
 })
-basic.showString("WELCOME TO BRYN & VEE'S COMPASS & MORE")
+basic.showString("WELCOME TO BRYN'S COMPASS & MORE")
 basic.forever(function () {
     degrees = input.compassHeading()
     if (degrees < 45) {
